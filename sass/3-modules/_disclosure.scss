@@ -1,0 +1,25 @@
+@use '../1-foundations/breakpoints' as *;
+@use '../1-foundations/colors' as *;
+@use '../1-foundations/fonts' as *;
+@use '../1-foundations/spacing' as *;
+
+.disc{
+    border-top: 1px solid var(--c-platinum-300);
+
+    &__content{
+        gap: var(--s-06);
+        padding-block: var(--s-09);
+    }
+
+    &__sections{
+        gap: var(--s-02);
+
+        h3{
+            @include heading-3(var(--c-neutral-500));
+        }
+
+        p, span{
+            @include body-s(var(--c-neutral-400));
+        }
+    }
+}

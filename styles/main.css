@@ -1,0 +1,343 @@
+:root {
+  --c-tu-blue: #00a6ca;
+  --c-tu-gray: #f3f4f6;
+  --c-gradient-1: #497BAC;
+  --c-gradient-2: #234574;
+  --c-blue-100: #9ab0ce;
+  --c-blue-200: #6788b6;
+  --c-blue-300: #34609d;
+  --c-blue-400: #274876;
+  --c-blue-500: #1a304e;
+  --c-neutral-100: #ffffff;
+  --c-neutral-200: #d5d5d5;
+  --c-neutral-300: #aaaaaa;
+  --c-neutral-400: #555555;
+  --c-neutral-500: #333333;
+  --c-orange-100: #ffb941;
+  --c-orange-200: #ffa941;
+  --c-orange-300: #ff8a28;
+  --c-orange-400: #ff7c17;
+  --c-orange-500: #ff6f07;
+  --c-orange-600: #E46D10;
+  --c-indigo-100: #87c4fd;
+  --c-indigo-200: #4aa7fc;
+  --c-indigo-300: #0e89fb;
+  --c-indigo-400: #0a67bc;
+  --c-indigo-500: #07447d;
+  --c-red-100: #f3bfc6;
+  --c-red-200: #e16070;
+  --c-red-300: #d0021b;
+  --c-red-400: #970114;
+  --c-red-500: #5e010c;
+  --c-lime-100: #cdedd0;
+  --c-lime-200: #7ed189;
+  --c-lime-300: #31b643;
+  --c-lime-400: #248431;
+  --c-lime-500: #16521e;
+  --c-platinum-100: #f3f4f6;
+  --c-platinum-200: #e7eaed;
+  --c-platinum-300: #dadfe3;
+  --c-platinum-400: #ced4da;
+  --c-platinum-500: #b4b9bf;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, figure, picture, blockquote, ul, li, fieldset, label {
+  margin: 0;
+}
+
+body {
+  font-family: poppins, Arial, sans-serif;
+  min-height: 100vh;
+  background-color: var(--c-tu-gray);
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+label {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --s-01: 0.25rem;
+  --s-02: 0.5rem;
+  --s-03: 0.75rem;
+  --s-04: 1rem;
+  --s-05: 1.25rem;
+  --s-06: 1.5rem;
+  --s-07: 2rem;
+  --s-08: 2.5rem;
+  --s-09: 3rem;
+  --s-095: 3.5rem;
+  --s-10: 4rem;
+  --s-11: 7.5rem;
+  --s-12: 13.875em;
+  --s-13: 62.25em;
+  --s-14: 75em;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--s-03);
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-03);
+}
+
+.grid {
+  display: grid;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.center {
+  text-align: center;
+}
+
+.wrapper {
+  padding: 0 var(--s-06);
+}
+@media (min-width: 48em) {
+  .wrapper {
+    padding: 0 var(--s-09);
+  }
+}
+@media (min-width: 65.25em) {
+  .wrapper {
+    padding: 0 var(--s-06);
+  }
+}
+
+.width-100 {
+  width: 100;
+}
+
+.max-width-1 {
+  width: 100%;
+  max-width: var(--s-14);
+  margin-inline: auto;
+}
+
+.max-width-2 {
+  max-width: var(--s-13);
+  margin-inline: auto;
+}
+
+.white-bg {
+  background-color: var(--c-neutral-100);
+}
+
+.gradient-bg {
+  background: linear-gradient(180deg, var(--c-gradient-1), var(--c-gradient-2));
+}
+
+.hidden {
+  display: none;
+}
+
+.nav {
+  justify-content: center;
+  padding-block: var(--s-04);
+}
+.nav__bar {
+  justify-content: space-between;
+}
+@media (max-width: 47.99875em) {
+  .nav__bar {
+    justify-content: center;
+  }
+}
+@media (max-width: 47.99875em) {
+  .nav__logo {
+    display: none;
+  }
+}
+
+.btn-src {
+  width: 100%;
+}
+
+.button-primary {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: var(--s-03) var(--s-04);
+  background-color: var(--c-orange-500);
+  border-radius: var(--s-10);
+  border: hidden;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: var(--c-neutral-100);
+}
+.button-primary:hover {
+  background-color: var(--c-orange-600);
+}
+.button-primary:active {
+  background-color: var(--c-orange-300);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.hero {
+  padding-block: var(--s-07) var(--s-05);
+  gap: var(--s-05);
+  grid-template-columns: 1fr;
+}
+.hero__content {
+  gap: var(--s-05);
+}
+@media (max-width: 47.99875em) {
+  .hero__content {
+    align-items: center;
+  }
+}
+.hero__text {
+  width: 100%;
+  gap: var(--s-02);
+}
+@media (max-width: 47.99875em) {
+  .hero__text {
+    text-align: center;
+  }
+}
+.hero h1 {
+  font-size: 2.4375rem;
+  line-height: 2.625rem;
+  color: var(--c-neutral-500);
+}
+.hero__subheadline {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: var(--c-tu-blue);
+}
+.hero__cta-block {
+  gap: var(--s-06);
+  align-items: center;
+  max-width: 327px;
+}
+.hero__cta {
+  gap: var(--s-02);
+}
+.hero span {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: var(--c-neutral-500);
+}
+.hero__image {
+  justify-content: center;
+  width: 100%;
+}
+@media (max-width: 47.99875em) {
+  .hero__image img {
+    max-width: 200px;
+  }
+}
+@media (min-width: 48em) {
+  .hero {
+    gap: var(--s-06);
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 3.0625rem;
+    line-height: 3.125rem;
+    color: var(--c-neutral-500);
+  }
+  .hero h2 {
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
+    color: var(--c-tu-blue);
+  }
+}
+
+.disc {
+  border-top: 1px solid var(--c-platinum-300);
+}
+.disc__content {
+  gap: var(--s-06);
+  padding-block: var(--s-09);
+}
+.disc__sections {
+  gap: var(--s-02);
+}
+.disc__sections h3 {
+  font-size: 1.5625rem;
+  line-height: 1.875rem;
+  color: var(--c-neutral-500);
+}
+.disc__sections p, .disc__sections span {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--c-neutral-400);
+}
+
+/*# sourceMappingURL=main.css.map */

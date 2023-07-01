@@ -1,0 +1,24 @@
+<svg width="445" height="234" viewBox="0 0 445 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_5_7880)">
+<path d="M439.11 234L438.997 7.76318L394.892 50.5881L356.668 62.9572L314.366 92.3862L248.512 102.235L248.354 102.445L201.679 124.522L143.488 115.047L98.1876 136.448L60.753 143.869L8.03821 176.356L7.49731 234H439.11Z" fill="url(#paint0_linear_5_7880)"/>
+</g>
+<ellipse cx="59.9762" cy="143.062" rx="7.49699" ry="7.76303" fill="#7ED189"/>
+<ellipse cx="7.49699" cy="176.332" rx="7.49699" ry="7.76303" fill="#7ED189"/>
+<ellipse cx="95.3185" cy="137.516" rx="7.49699" ry="7.76303" fill="#7ED189"/>
+<ellipse cx="142.443" cy="113.118" rx="7.49699" ry="7.76303" fill="#7ED189"/>
+<ellipse cx="202.419" cy="124.209" rx="7.49699" ry="7.76303" fill="#7ED189"/>
+<ellipse cx="246.33" cy="102.029" rx="7.49699" ry="7.76303" fill="#7ED189"/>
+<ellipse cx="312.732" cy="94.2655" rx="7.49699" ry="7.76303" fill="#7ED189"/>
+<ellipse cx="355.572" cy="64.3221" rx="7.49699" ry="7.76303" fill="#7ED189"/>
+<ellipse cx="397.34" cy="48.7962" rx="7.49699" ry="7.76303" fill="#7ED189"/>
+<ellipse cx="437.503" cy="7.76303" rx="7.49699" ry="7.76303" fill="#7ED189"/>
+<defs>
+<linearGradient id="paint0_linear_5_7880" x1="246.866" y1="139.735" x2="247.992" y2="233.999" gradientUnits="userSpaceOnUse">
+<stop stop-color="#31B643"/>
+<stop offset="1" stop-color="#31B643" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_5_7880">
+<rect width="431.613" height="226.237" fill="white" transform="translate(7.49731 7.76318)"/>
+</clipPath>
+</defs>
+</svg>

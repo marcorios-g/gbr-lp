@@ -1,0 +1,21 @@
+@use '../1-foundations/breakpoints' as *;
+@use '../1-foundations/spacing' as *;
+
+.nav{
+    justify-content: center;
+    padding-block: var(--s-04);
+
+    &__bar{
+        justify-content: space-between;
+
+        @include breakpoint-max(small){
+            justify-content: center;
+        }
+    }
+
+    &__logo{
+        @include breakpoint-max(small){
+            display: none;
+        }
+    }
+}

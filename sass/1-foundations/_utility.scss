@@ -1,0 +1,102 @@
+@use "breakpoints" as *;
+@use "spacing" as *;
+@use "fonts" as *;
+
+// FLEX, GRID
+
+@mixin flex-row() {
+  display: flex;
+  flex-direction: row;
+  gap: var(--s-03);
+}
+
+@mixin flex-col() {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-03);
+}
+
+.flex-row {
+  @include flex-row();
+}
+
+.flex-col {
+  @include flex-col();
+}
+
+.grid {
+  display: grid;
+}
+
+@mixin grid-span-2() {
+  grid-column: span 2;
+}
+
+// TYPOGRAPHY
+
+.bold {
+  font-weight: 700;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.center {
+  text-align: center;
+}
+
+// SECTION
+
+.wrapper {
+  padding: 0 var(--s-06);
+
+  @include breakpoint-min(medium) {
+    padding: 0 var(--s-09);
+  }
+
+  @include breakpoint-min(large) {
+    padding: 0 var(--s-06);
+  }
+}
+
+.width-100{
+  width: 100;;
+}
+
+.max-width-1 {
+  width: 100%;
+  max-width: var(--s-14);
+  margin-inline: auto;
+}
+
+.max-width-2 {
+  max-width: var(--s-13);
+  margin-inline: auto;
+}
+
+.white-bg {
+  background-color: var(--c-neutral-100);
+}
+
+.gradient-bg {
+  background: linear-gradient(180deg, var(--c-gradient-1), var(--c-gradient-2));
+}
+
+// JS STYLE
+
+.hidden {
+  display: none;
+}

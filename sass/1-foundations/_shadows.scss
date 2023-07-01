@@ -1,0 +1,7 @@
+@mixin shadow-cta(){
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@mixin shadow-card(){
+    box-shadow: 10px 10px 20px rgba(85, 85, 85, 0.14);
+}

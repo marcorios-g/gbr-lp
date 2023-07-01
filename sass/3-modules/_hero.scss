@@ -1,0 +1,78 @@
+@use '../1-foundations/breakpoints' as *;
+@use '../1-foundations/colors' as *;
+@use '../1-foundations/spacing' as *;
+@use '../1-foundations/fonts' as *;
+@use '../1-foundations/utility' as *;
+
+.hero{
+    padding-block: var(--s-07) var(--s-05);
+    gap: var(--s-05);
+    grid-template-columns: 1fr;
+
+    &__content{
+        gap: var(--s-05);
+
+        @include breakpoint-max(small){
+            align-items: center;
+        }
+    }
+
+    &__text{
+        width: 100%;
+        gap: var(--s-02);
+
+        @include breakpoint-max(small){
+            text-align: center;
+        }
+    }
+
+    h1{
+        @include heading-1(var(--c-neutral-500));
+    }
+
+    &__subheadline{
+        @include heading-4(var(--c-tu-blue));
+    }
+
+    &__cta-block{
+        gap: var(--s-06);
+        align-items: center;
+        max-width: 327px;
+    }
+
+    &__cta{
+        gap: var(--s-02);
+    }
+
+    span{
+        @include body-l(var(--c-neutral-500));
+    }
+
+    &__image{
+        justify-content: center;
+        width: 100%;
+
+        img{
+            @include breakpoint-max(small){
+                max-width: 200px;
+            }
+        }
+    }
+
+
+    // TABLET
+
+    @include breakpoint-min(medium){
+        gap: var(--s-06);
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        h1{
+            @include heading-0(var(--c-neutral-500));
+        }
+
+        h2{
+            @include heading-3(var(--c-tu-blue));
+        }
+    }
+}
