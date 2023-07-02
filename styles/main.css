@@ -354,10 +354,10 @@ label {
   display: none;
 }
 .faq li {
+  list-style: url("../assets/icons-ul.svg");
   font-size: 0.875rem;
   line-height: 1.125rem;
   color: var(--c-neutral-400);
-  list-style-image: url("../../assets/icons-ul.svg");
   padding-left: var(--s-01);
 }
 .faq__headline.engage .faq__icon-minus {
