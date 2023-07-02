@@ -1,0 +1,22 @@
+@use '../1-foundations/breakpoints' as *;
+@use '../1-foundations/colors' as *;
+@use '../1-foundations/fonts' as *;
+
+.featured{
+    align-items: center;
+    
+    &__title{
+        align-items: center;
+
+        span{
+            @include body-l(var(--c-neutral-400));
+        }
+    }
+
+    &__on{
+        justify-content: center;
+        gap: var(--s-09);
+        flex-wrap: wrap;
+        row-gap: var(--s-03);
+    }
+}

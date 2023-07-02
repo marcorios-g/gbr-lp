@@ -1,0 +1,73 @@
+@use '../1-foundations/breakpoints' as *;
+@use '../1-foundations/colors' as *;
+@use '../1-foundations/fonts' as *;
+@use '../1-foundations/spacing' as *;
+
+.testimonial{
+    padding-block: var(--s-09);
+    gap: var(--s-08);
+
+    &__quotes{
+        @include breakpoint-max(small){
+            max-width: 317px;
+        }
+        position: absolute;
+        z-index: -1;
+        right: 1.1875rem;
+        margin-top: -1.875rem;
+    }
+
+    h2{
+        @include heading-1(var(--c-neutral-500));
+    }
+
+    &__card{
+        padding: var(--s-06);
+        gap: var(--s-02);
+    }
+
+    blockquote{
+        @include body-m(var(--c-neutral-400));
+    }
+
+    cite{
+        @include body-l(var(--c-tu-blue));
+        font-style: normal;
+    }
+
+
+    // TABLET
+
+    @include breakpoint-min(medium) {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        &__quotes{
+            left: .4375rem;
+            margin-top: 10rem;
+        }
+
+        h2{
+            @include heading-2(var(--c-neutral-500));
+            margin-left: 7.5rem;
+        }
+
+        &__card{
+            align-items: flex-start;
+        }
+    }
+
+
+    // DESKTOP
+
+    @include breakpoint-min(large) {
+        &__quotes{
+            left: 2.875rem;
+        }
+
+        h2{
+            @include heading-1(var(--c-neutral-500));
+            margin-left: unset;
+        }
+    }
+}

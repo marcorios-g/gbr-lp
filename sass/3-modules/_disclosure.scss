@@ -21,5 +21,18 @@
         p, span{
             @include body-s(var(--c-neutral-400));
         }
+
+    }
+
+    &__sub{
+        gap: var(--s-02);
+    }
+
+    // DESKTOP
+
+    @include breakpoint-min(large){
+        &__content{
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }

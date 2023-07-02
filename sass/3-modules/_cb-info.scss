@@ -1,0 +1,54 @@
+@use '../1-foundations/breakpoints' as *;
+@use '../1-foundations/colors' as *;
+@use '../1-foundations/fonts' as *;
+@use '../1-foundations/spacing' as *;
+
+.cb-info{
+    padding-block: var(--s-09);
+    gap: var(--s-08);
+
+    &__title{
+        gap: var(--s-01);
+    }
+
+    h2{
+        @include heading-2(var(--c-neutral-500));
+    }
+
+    h3{
+        @include heading-4(var(--c-tu-blue));
+    }
+
+    &__grid{
+        gap: var(--s-06);
+    }
+
+
+    // TABLET
+
+    @include breakpoint-min(medium){
+        gap: var(--s-09);
+        padding-bottom: 0;
+
+        h2{
+            @include heading-0(var(--c-neutral-500));
+        }
+
+        h3{
+            @include heading-3(var(--c-tu-blue));
+        }
+    }
+
+
+    // DESKTOP
+    
+    @include breakpoint-min(large){
+        &__grid{
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__span-2{
+            grid-column: span 2;
+        }
+    }
+}

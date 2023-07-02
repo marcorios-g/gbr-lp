@@ -1,0 +1,51 @@
+@use '../1-foundations/breakpoints' as *;
+@use '../1-foundations/colors' as *;
+@use '../1-foundations/fonts' as *;
+@use '../1-foundations/shadows' as *;
+
+footer{
+    background: linear-gradient(180deg, #497BAC 0%, #234574 100%);
+    color: var(--c-neutral-100);
+}
+
+.footer-main{
+    padding-block: var(--s-075) var(--s-09);
+    gap: var(--s-04);
+
+    &__content{
+        gap: var(--s-06);
+    }
+
+    &__sitemap{
+        grid-template-columns: 1fr 1fr;
+        row-gap: var(--s-03);
+        column-gap: var(--s-07);
+    }
+
+    &__subcat{
+    gap: var(--s-02);
+    }
+
+    p, a, small{
+        @include body-s(var(--c-neutral-100));
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    &__disclaimers{
+        padding-top: var(--s-06);
+        border-top: 1px solid var(--c-neutral-100);
+        gap: var(--s-02);
+    }
+
+
+    // DESKTOP
+
+    @include breakpoint-min(large){
+        &__sitemap{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@use '../1-foundations/colors' as *;
+@use '../1-foundations/fonts' as *;
+@use '../1-foundations/spacing' as *;
+
+.faqs{
+    border-top: 1px solid var(--c-platinum-300);
+}
+
+.faqs-module{
+    padding-block: var(--s-10);
+    gap: var(--s-075);
+
+    h2{
+        @include heading-1(var(--c-neutral-500));
+    }
+
+    &__questions{
+        gap: var(--s-02);
+    }
+}

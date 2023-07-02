@@ -1,0 +1,93 @@
+@use '../1-foundations/breakpoints' as *;
+@use '../1-foundations/colors' as *;
+@use '../1-foundations/fonts' as *;
+@use '../1-foundations/shadows' as *;
+@use '../1-foundations/spacing' as *;
+
+.grid-card{
+    gap: var(--s-03);
+    padding: var(--s-08) var(--s-06);
+    border-radius: var(--s-04);
+    @include shadow-card;
+
+    h4{
+        @include heading-2(var(--c-neutral-500));
+    }
+
+    p{
+        @include body-s(var(--c-neutral-400));
+    }
+
+    span{
+        @include body-s(var(--c-neutral-500));
+    }
+
+    a{
+        @include body-s(var(--c-tu-blue));
+
+        img{
+            transform: translate(0);
+            transition: 0.15s ease-in-out;
+        }
+    }
+
+    a:hover{
+        img{
+            transform: translate(var(--s-01));
+        }
+    }
+
+
+    &__list{
+        gap: var(--s-02);
+    }
+
+    &__list-item{
+        align-items: center;
+    }
+    
+    figure{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__phone{
+        margin-bottom: -2.5rem;
+    }
+
+    &__graph{
+        @include breakpoint-max(small){
+            width: 236px;
+        }
+    }
+
+
+    // TABLET
+
+    @include breakpoint-min(medium){
+        grid-template-columns: 1fr 1fr;
+        gap: var(--s-06);
+        align-items: center;
+
+        &__1col{
+            grid-template-columns: 1fr;
+        }
+
+        &__2-1{
+            grid-template-columns: 2fr 1fr;
+        }
+
+        &__graph{
+            max-width: 281px;
+        }
+    }
+
+
+    // DESKTOP
+
+    @include breakpoint-min(large){
+        &__graph{
+            max-width: 445px;
+        }
+    }
+}

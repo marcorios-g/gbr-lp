@@ -1,0 +1,56 @@
+@use '../1-foundations/colors' as *;
+@use '../1-foundations/fonts' as *;
+@use '../1-foundations/spacing' as *;
+
+.faq{
+    gap: 0;
+    border-radius: var(--s-01);
+
+    &__headline{
+        padding: var(--s-03) var(--s-04);
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        span{
+            @include body-m(var(--c-neutral-400));
+        }
+    }
+
+    &__icon{
+        max-width: var(--s-04);
+        max-height: var(--s-04);
+    }
+
+    &__icon-minus{
+        display: none;
+    }
+
+    &__content{
+        padding: 0 var(--s-04) var(--s-03) var(--s-07);
+        gap: var(--s-02);
+        display: none;
+    }
+
+    li{
+        @include body-m(var(--c-neutral-400));
+        list-style-image: url('../../assets/icons-ul.svg');
+        padding-left: var(--s-01);
+    }
+
+    &__headline.engage &__icon-minus{
+        display: block;
+    }
+    
+    &__headline.engage &__icon-plus{
+        display: none;
+    }
+
+    &__headline.engage ~ &__content{
+        display: flex;
+    }
+}
+
+.faq:nth-child(2){
+    background-color: var(--c-platinum-100);
+}
