@@ -6,6 +6,7 @@
 .testimonial{
     padding-block: var(--s-09);
     gap: var(--s-08);
+    position: relative;
 
     &__quotes{
         @include breakpoint-max(small){
@@ -13,8 +14,8 @@
         }
         position: absolute;
         z-index: -1;
-        right: 1.1875rem;
-        margin-top: -1.875rem;
+        right: -1.1875rem;
+        top: -0.875rem;
     }
 
     h2{
@@ -62,7 +63,8 @@
 
     @include breakpoint-min(large) {
         &__quotes{
-            left: 2.875rem;
+            left: -3.875rem;
+            margin-top: 6rem;
         }
 
         h2{

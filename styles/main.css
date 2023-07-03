@@ -580,12 +580,13 @@ footer {
 .testimonial {
   padding-block: var(--s-09);
   gap: var(--s-08);
+  position: relative;
 }
 .testimonial__quotes {
   position: absolute;
   z-index: -1;
-  right: 1.1875rem;
-  margin-top: -1.875rem;
+  right: -1.1875rem;
+  top: -0.875rem;
 }
 @media (max-width: 47.99875em) {
   .testimonial__quotes {
@@ -633,7 +634,8 @@ footer {
 }
 @media (min-width: 65.25em) {
   .testimonial__quotes {
-    left: 2.875rem;
+    left: -3.875rem;
+    margin-top: 6rem;
   }
   .testimonial h2 {
     font-size: 2.4375rem;
