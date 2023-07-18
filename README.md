@@ -9,6 +9,6 @@ This project is meant for me to gain and reinforce knowledge in certain areas, s
 - **[Alex Alcala](https://www.linkedin.com/in/alex-alcal%C3%A1-953b1a61/):** Colleague Product Designer and friend, who let me use his design to practice.
 - **[Rizal Renaldi](https://www.figma.com/community/plugin/1048610713268120902/Logoipsum):** Creator of the Logoipsum Figma plugin.
 
-*** I appreciate the feedback 😀
+### I appreciate the feedback 😀
 
 Please let me know what you think and how to I can improve in my projects.
